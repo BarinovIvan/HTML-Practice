@@ -1,0 +1,133 @@
+body {
+   background-color: #fae9be;
+}
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.navigationMenu{
+    padding: 10px 10px 10px 10px;
+    background-color: #471a47 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#phoneNumber {
+    color:white;
+    flex-basis:1;
+}
+#icon {
+    text-align:center;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 0 0 0;
+}
+a.blubtn {
+
+    text-align:center;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: .5s;
+    border-radius: 0px;
+  }
+  a.blubtn:hover {
+    top: 5px;
+    transition: .5s;
+    color: #10FF58;
+    /* border: #10FF58 1px solid; */
+    border-radius: 10px;
+  }
+  a.blubtn:active {
+    color: #000;
+    /* border: #1A1A1A 1px solid; */
+    transition: .07s;
+    background-color: #FFF;
+  }
+
+h1 {
+  font-weight: bolder;
+  font-size: larger;
+  text-align: center;
+  margin: 10px;
+}
+
+.aboutUs{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.text1{
+  width: 25%;
+}
+
+.goods{
+  display: flex;
+  justify-content: center;
+}
+
+.goodsList{
+  display: flex;
+  justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+  
+
+  
+}
+
+.goodsList div{
+  flex-basis: 50%;
+  
+}
+ 
+
+section {
+  padding: 15px;
+}
+
+.footer{
+  display: flex;
+  align-items: baseline;
+}
+
+.contactsString{
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-right: 30px;
+  
+}
+
+.addres{
+  align-self: flex-start;
+  color: white;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+
+}
