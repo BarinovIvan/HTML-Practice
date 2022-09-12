@@ -1,0 +1,136 @@
+html,
+body {
+    margin: 0;
+    line-height: 1.15;
+    background-color: #f0eeee;;
+}
+
+a {
+    text-decoration: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 0 220px;
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: #303B44;
+    align-items: center;
+    margin: 0;
+    line-height: 5px;
+}
+
+.header-top-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+
+.icon-wrapper {
+    gap: 10px;
+}
+
+.header-top-left__item {
+    color: white;
+    font-size: 0.875em;
+
+}
+
+.header-top-left__item_border {
+    border: 1px solid gray;
+    border-radius: 3px;
+    line-height: 100%;
+    font-size: .7em;
+    padding: 6px 8px;
+    color: white;
+}
+
+.header-top-left__item_right {
+    font-size: .8em;
+    align-self: center;
+    color: #99FFA7;
+}
+
+.header-bottom {
+    background-color: white;
+    border-bottom: 1px solid #dedede;
+    justify-content: flex-start;
+    justify-content: space-between;
+    font-size: 0.875em;
+    line-height: 3em;
+    align-items: center;
+}
+
+.header-bottom-left__item {
+    color: #909090;
+    margin-right: 20px;
+}
+
+.header-bottom-left__item_active {
+    margin-right: 20px;
+    color: #121212;
+}
+
+.header-bottom-buttons {
+    display: flex;
+    align-self: left;
+    gap: 10px;
+}
+
+.potoki{
+    background-color: white;
+    
+    padding-bottom: 10px;
+    pad
+}
+
+.potoki h3{
+    margin-top: 0;
+    padding: 20px;
+}
+
+.links {
+    padding-bottom: 0.875em;
+    display: flex;
+    border-bottom: 1px solid#8d9496;
+}
+
+.links__item {
+    font-family: Fira Sans, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 600;
+    color: #8d9496;
+    margin-right: 20px;
+}
+
+.links__item_active{
+    color: #4d80aa;
+    border-bottom: 2px solid#4d80aa;
+}
+
+.links::before{
+    content:"";
+    flex: none;
+    width: 16px;
+}
+
+.radio{
+    font-size: 0.675em;
+    padding: 5px 0 0 20px;
+}
