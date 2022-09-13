@@ -1,2 +1,33 @@
 @import url("reset.css");
 @import url("mainPage.css");
+
+@font-face { 
+    font-family: "LarsseitThin";
+    src: url("../fonts/Larsseit-Thin.eot");
+    src: url("../fonts/Larsseit-Thin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Larsseit-Thin.woff") format("woff"),
+    url("../fonts/Larsseit-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face { 
+    font-family: "LarsseitBold";
+    src: url("../fonts/Larsseit-Bold.eot");
+    src: url("../fonts/Larsseit-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Larsseit-Bold.woff") format("woff"),
+    url("../fonts/Larsseit-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit.eot");
+    src: url("../fonts/Larsseit.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Larsseit.woff") format("woff"),
+    url("../fonts/Larsseit.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+
