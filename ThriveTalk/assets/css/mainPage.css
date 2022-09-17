@@ -90,7 +90,7 @@ header {
 
 /* ---------FIRST SECTION---------------------------*/
 
-/* ----Right-side------------------ */
+/* ----Left-side------------------ */
 
 .left-side {
   position: relative;
@@ -163,6 +163,12 @@ header {
 .header__button-descr:hover {
   background-color: #eecb8e;
   color: white;
+}
+
+.first__image{
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* ---------SECOND SECTION---------------------------*/
@@ -447,6 +453,7 @@ header {
 /* ---------SEVENTH SECTION---------------------------*/
 
 .seventh {
+  margin-top: -4px;
   display: flex;
   background-color: #22356f;
   color: #fff;
@@ -524,4 +531,55 @@ header {
 
 .seventh__image{
 margin-left: auto;
+}
+
+/* ---------SEVENTH SECTION---------------------------*/
+
+.eighth{
+  display: inline-flex;
+}
+
+.eighth-wrapper{
+  display: flex;
+  padding-top: 98px;
+  padding-left: 68px;
+}
+
+.eighth__item{
+ 
+  margin-right: 56px;
+  width: 240px;
+}
+
+.eight__text{
+  margin-top: 54px;
+}
+
+/* ---------FOOTER---------------------------*/
+
+footer{
+  margin-top: -4px;
+}
+
+footer>div{
+  height: 80px;
+  background-color: #62D0DF;
+  padding-top: 32px;
+}
+
+.footer__text{
+
+  margin-left: 194px;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 9px;
+  letter-spacing: -0.006em;
+  
+  color: #FFFFFF;
+}
+
+.footer__text:before{
+  content:"\00a9  ";
 }
