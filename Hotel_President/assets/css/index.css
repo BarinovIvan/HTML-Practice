@@ -1,0 +1,180 @@
+body {
+	height: 100%;
+	
+	background-color: #F1F1F1;
+	
+	font-size: 18px;
+	font-family: Montserrat;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ======================================================================= */
+
+.wrapper {
+	min-height: 100%;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+/* ======================================================================= */
+
+.container {
+	max-width: 1510px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.ibg{
+	position: relative;
+}
+
+.ibg img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	object-fit: cover;
+}
+
+/* ====HEADER=================================================================== */
+
+.header {
+	background-color: black;
+}
+
+.header__container {
+	padding: 0 15px;
+	box-sizing: content-box;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	min-height: 94px;
+	
+	color: white;
+}
+
+
+@media(max-width: 850px) {
+	.header__container{
+		justify-content: center;
+	}
+}
+
+
+@media(max-width: 1080px) {
+	.header__container{
+		min-height: 70px;
+	}
+	
+}
+
+.border-button {
+	padding: 13px 27px;
+
+	font-size: 20px;
+	text-transform: uppercase;
+
+	border: 1px solid white;
+}
+
+@media(max-width: 1080px) {
+	.border-button {
+		font-size: 14px;
+		padding: 10px 25px;
+	}
+}
+
+@media(max-width: 850px) {
+	.border-button{
+		display: none;
+	}
+}
+
+
+.header__menu {}
+
+
+.menu__list {
+	display: flex;
+}
+
+@media(max-width: 768px) {
+	
+}
+
+
+@media(max-width: 850px) {
+	
+}
+
+
+.menu__item {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu__item:hover{
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 100%;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #ffffff; /*задаём цвет линии*/
+	content: "";
+}
+
+@media(max-width: 1080px) {
+	.menu__item{
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+
+.menu__item:not(:last-child){
+	margin-right: 40px;
+}
+
+.header__phone {}
+
+/* ======WELCOME================================================================= */
+
+
+.page__welcome {
+}
+.welcome {
+	position: relative;
+}
+.welcome__container {
+}
+.container {
+}
+.welcome__title {
+}
+.welcome__subtitle {
+}
+
+
+.welcome__body{
+}
+
+.welcome__image{
+	min-height: 433px;
+
+}
+.welcome__image img{
+	
+}
