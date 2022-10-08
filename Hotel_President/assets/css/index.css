@@ -78,15 +78,12 @@ a {
 	}
 }
 
-
-
 @media(max-width: 626px) {
 	.container {
 		padding: 0 20px;
 	}
 
 }
-
 
 .ibg {
 	position: relative;
@@ -114,6 +111,11 @@ a {
 }
 
 /* ====HEADER=================================================================== */
+
+/* Отступ до футера */
+.contacts__body{
+	margin-bottom: 44px;
+}
 
 .header {
 	background-color: black;
@@ -203,6 +205,18 @@ a {
 	top: 125%;
 	left: 0;
 }
+
+.menu__item:nth-child(1):after {
+	content: "";
+	height: 1px;
+	width: 100%;
+	background-color: #fff;
+
+	position: absolute;
+	top: 125%;
+	left: 0;
+}
+
 
 @media(max-width: 1080px) {
 	.menu__item {
