@@ -19,7 +19,7 @@ a {
 	min-height: 100%;
 
 	overflow-x: hidden;
-
+	
 	box-sizing: content-box;
 	display: flex;
 	flex-direction: column;
@@ -30,7 +30,7 @@ a {
 
 .container {
 	max-width: 1510px;
-	padding: 0 70px;
+	padding: 0 70px;	
 	background-color: #fff;
 	box-sizing: border-box;
 
@@ -42,38 +42,38 @@ a {
 }
 
 @media(min-width: 1708px) {
-	.container {
+	.container{
 		margin: 0 auto;
 	}
-
+	
 }
 
 @media(max-width: 1180px) {
-	.container {
+	.container{
 		margin: 0 auto;
 	}
 }
 
 
 
-.container-header {
+.container-header{
 	max-width: 1510px;
 	margin: 0 auto;
-	padding: 0 70px;
+	padding: 0 70px;	
 	box-sizing: border-box;
 
 	margin: 0 100px;
 }
 
 @media(min-width: 1708px) {
-	.container-header {
+	.container-header{
 		margin: 0 auto;
 	}
-
+	
 }
 
 @media(max-width: 1180px) {
-	.container-header {
+	.container-header{
 		margin: 0 auto;
 	}
 }
@@ -81,10 +81,10 @@ a {
 
 
 @media(max-width: 626px) {
-	.container {
+	.container{
 		padding: 0 20px;
 	}
-
+	
 }
 
 
@@ -102,7 +102,7 @@ a {
 	object-fit: cover;
 }
 
-.title {
+.title{
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 40px;
@@ -156,7 +156,7 @@ a {
 	border: 1px solid white;
 }
 
-.border-button:hover {
+.border-button:hover{
 	color: #E0C66E;
 	background-color: #fff;
 	border: #E0C66E 1px solid;
@@ -223,7 +223,7 @@ a {
 .greeting {
 	position: relative;
 
-
+	
 	font-family: 'Yeseva One';
 	font-style: normal;
 	text-transform: uppercase;
@@ -239,20 +239,20 @@ a {
 
 @media(max-width: 1112px) {
 	.greeting__body {
-		padding-top: 90px;
+		padding-top:90px ;
 	}
 
 }
 
 @media(max-width: 779px) {
 	.greeting__body {
-		padding-top: 60px;
+		padding-top:60px ;
 	}
 }
 
 @media(max-width: 626px) {
 	.greeting__body {
-		padding-top: 30px;
+		padding-top:30px ;
 	}
 }
 
@@ -268,20 +268,20 @@ a {
 
 @media(max-width: 1112px) {
 	.greeting__title {
-		line-height: 150px;
+		line-height:150px ;
 	}
 
 }
 
 @media(max-width: 779px) {
 	.greeting__title {
-		line-height: 120px;
+		line-height:120px ;
 	}
 }
 
 @media(max-width: 626px) {
 	.greeting__title {
-		line-height: 90px;
+		line-height:90px ;
 	}
 }
 
@@ -397,324 +397,39 @@ a {
 	left: 0;
 }
 
+/* =====КОНТАКТЫ================================================================== */ 
 
-/* ========WELCOME=============================================================== */
+.contacts{
+	position: relative;
 
-.page__welcome {
-	display: flex;
-	flex-direction: column;
+	margin-bottom: 59px;
+}
+.contacts__wraper{
 	margin-top: -58px;
-
-	position: relative;
-	z-index: 3;
+	padding-top: 58px;
 }
-
-.welcome__container {
-	display: flex;
-
-}
-
-.welcome__body {
-	padding: 81px 0;
-	margin-bottom: 20px;
-
-	flex: 0 1 100%;
-	text-align: center;
-	max-width: 1370px;
-
-	font-family: 'Montserrat';
-	font-style: normal;
-	color: black;
-
-	position: relative;
-	z-index: 2;
-
-}
-
-@media(max-width: 1500px) {
-	.welcome__body {
-		margin-bottom: 0;
-	}
-
-}
-
-
-@media(max-width: 626px) {
-	.welcome__body {
-		padding: 81px 35px;
-	}
-
-}
-
-.descr {
-	position: relative;
-
-	display: flex;
-
-	margin-top: 60px;
-	text-align: left;
-	padding: 40px;
-	/* Освобождение места для круглой фотографии  */
-	border: 1px solid #E0C66E;
-}
-
-@media(max-width: 1500px) {
-	.descr {
-		justify-content: center;
-		text-align: center;
-	}
-}
-
-
-.descr__title {
-	font-family: 'Yeseva One';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 32px;
-
-	line-height: 37px;
-	/* Отступ от картинки */
-	padding-right: 330px;
-
-	margin-bottom: 40px;
-	letter-spacing: 0.05em;
-}
-
-@media(max-width: 1500px) {
-	.descr__title {
-		padding-right: 0;
-	}
-}
-
-.descr__text {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 198.5%;
-	/* Отступ от картинки */
-	padding-right: 330px;
-	margin-bottom: 26px;
-
-	letter-spacing: 0.05em;
-}
-
-@media(max-width: 1500px) {
-	.descr__text {
-		padding-right: 0;
-	}
-}
-
-
-.welcome-button {
-	/* Для задания ширины по контенту \/  */
-	display: inline-block;
-	background-color: black;
-	color: white;
-	padding: 17px 57px;
-
-	/* Чтобы контент div не дёргался при наведении */
-	border: black 1px solid;
-}
-
-.welcome-button:hover {
-	color: #E0C66E;
-	background-color: #fff;
-	border: #E0C66E 1px solid;
-
-}
-
-
-.welcome-button__link {
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 24px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-}
-
-
-.welcome__image img {
-	height: 524px;
-	width: 524px;
-	/* Перетаскивание картинки от правого края */
-	transform: translate(-75%, 80px);
-	z-index: 3;
-}
-
-@media(max-width: 1500px) {
-	.welcome__image {
-		display: none;
-	}
-}
-
-
-.welcome__background-image {
-	min-height: 489px;
-	position: absolute;
-	width: 102%;
-	top: 60px;
-	right: 0;
-	z-index: 1;
-}
-
-/* ========ROOMS=============================================================== */
-
-.rooms__block {
-	background-color: #fff;
-	text-align: center;
-
-}
-
-.rooms__title {
-	display: block;
-	margin: 0 0 77px;
-}
-
-@media(max-width: 1500px) {
-	.rooms__title {
-		margin-bottom: 57px;
-	}
-}
-
-
-.rooms__body {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	column-gap: 115px;
-	row-gap: 79px;
-
-	background-color: #fff;
-
-	font-family: 'Montserrat';
-	font-style: normal;
-	font-weight: 300;
-	font-size: 32px;
-	line-height: 39px;
-	/* identical to box height */
-
-	letter-spacing: 0.05em;
-
-	color: #E0C66E;
-
-	padding: 54px 60px 119px;
-
-	border-top: #E0C66E 1px solid;
-
-	text-align: left;
-}
-
-@media(max-width: 1551px) {
-	.rooms__body {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		padding-bottom: 100px;
-	}
-}
-
-@media(max-width: 956px) {
-	.rooms__body {
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(6, 1fr);
-		row-gap: 50px;
-	}
-}
-
-.rooms__column {
-	position: relative;
-	padding: 30px;
-}
-
-.rooms__room-item {
-	position: relative;
-	z-index: 3;
-	padding: 40px 30px;
-	border: #E0C66E 1px solid;
-}
-
-.room-item__title {
-	font-weight: 300;
-	font-size: 32px;
-	line-height: 39px;
-	letter-spacing: 0.05em;
-
-	margin-bottom: 28%;
-}
-
-.label {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 20px;
-	letter-spacing: 0.05em;
-
-	display: flex;
-	align-items: flex-start;
-}
-
-.label img {
-	/* Отступ от этиикетки */
-	margin-right: 8px;
-}
-
-.label p {
-	/* Выыравнивание с иконкой этикетки */
-	margin-top: -3px;
-}
-
-.label:not(:last-child) {
-	margin-bottom: 20px;
-}
-
-.rooms__picture {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
-
-.rooms__picture img {
-	filter: brightness(40%)
-}
-
-.rooms__link:hover .rooms__room-item {
-	opacity: 0;
-	/* display:block */
-}
-
-
-/* =====КОНТАКТЫ================================================================== */
-
-.contacts {
-	position: relative;
-}
-
 .contacts__body {
 	display: flex;
 	justify-content: space-between;
 	padding: 0 60px 42px;
+
 }
 
 @media(max-width: 1355px) {
 
-	.contacts__body {
+	.contacts__body{
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
 }
 
+
 .contacts__title {
 	text-align: center;
 
-	padding-bottom: 103px;
+	padding-bottom: 55px;
 }
-
-@media(max-width: 1500px) {
-	.contacts__title {
-		padding-bottom: 80px;
-	}
-}
-
 
 .contacts__text-block {
 	padding-top: 69px;
@@ -730,50 +445,35 @@ a {
 
 }
 
-.contacts__text-block>*:not(:last-child) {
+
+.contacts__text-block>*:not(:last-child){
 	margin-bottom: 60px;
 }
 
-.contacts__text-block>:last-child {
+.contacts__text-block>:last-child{
 	margin-bottom: 78px;
 }
-
-@media(max-width: 956px) {
-	.contacts__text-block>:last-child {
-		margin-bottom: 58px;
-	}
-}
-
 
 .contacts__text {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
-
-	color: #000000;
-
 	padding-left: 74px;
+	color: #000000;
 }
-
-@media(max-width: 500px) {
-	.contacts__text{
-		padding-left: 0;
-	}
-}
-
 .contacts__map-block {
 	width: 600px;
 	height: 396px;
 }
 
 @media(max-width: 740px) {
-	.contacts__map-block {
+	.contacts__map-block{
 		position: relative;
-
+		
 	}
 
-	.contacts__map-block img {
+	.contacts__map-block img{
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -781,10 +481,12 @@ a {
 		left: 0;
 		object-fit: cover;
 	}
-
+	
 }
 
-.contacts__background-image {
+
+
+.contacts__background-image{
 	min-height: 469px;
 	position: absolute;
 	width: 102%;
@@ -792,6 +494,7 @@ a {
 	right: 0;
 	z-index: 1;
 }
+
 
 .contacts__text-phone {
 	position: relative;
@@ -869,9 +572,15 @@ a {
 }
 
 
+@media(max-width: 500px) {
+	.contacts__text{
+		padding-left: 0;
+	}
+}
+
 /* ======FOOTER================================================================= */
 
-.footer__copyright {
+.footer__copyright{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;

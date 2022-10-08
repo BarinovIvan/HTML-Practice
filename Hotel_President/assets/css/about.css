@@ -39,6 +39,8 @@ a {
 	z-index: 2;
 
 	margin: 0 100px;
+	
+	
 }
 
 @media(min-width: 1708px) {
@@ -400,6 +402,11 @@ a {
 
 /* ========WELCOME=============================================================== */
 
+.welcome__container{
+	/* Отступ от футера	 */
+	margin-bottom: 104px;
+}
+
 .page__welcome {
 	display: flex;
 	flex-direction: column;
@@ -428,6 +435,7 @@ a {
 
 	position: relative;
 	z-index: 2;
+
 }
 
 @media(max-width: 626px) {
@@ -464,9 +472,7 @@ a {
 	font-size: 32px;
 
 	line-height: 37px;
-	/* Отступ от картинки */
-	padding-right: 330px; 
-	
+
 	margin-bottom: 40px;
 	letter-spacing: 0.05em;
 }
@@ -480,12 +486,10 @@ a {
 .descr__text {
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 198.5%;
-	/* Отступ от картинки */
-	padding-right: 330px; 
-	margin-bottom: 26px;
-
+	line-height: 165.5%;
 	letter-spacing: 0.05em;
+
+	margin-bottom: 26px;
 }
 
 @media(max-width: 1500px) {
@@ -546,6 +550,8 @@ a {
 	right: 0;
 	z-index: 1;
 }
+
+
 
 /* ======FOOTER================================================================= */
 

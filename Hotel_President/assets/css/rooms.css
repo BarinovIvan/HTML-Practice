@@ -517,23 +517,12 @@ a {
 	z-index: 1;
 }
 
-
-/*
-.rooms__modal-button{
-	
-	position: absolute;
-	top: 170px;
-	left: 30px;
-	z-index: 1;
+.rooms__link:hover .rooms__room-item {
+	opacity: 0;
+	/* display:block */
 }
 
-.rooms__link:hover .rooms__room-item{
-	display: none;
-}
 
-.rooms__link:hover .rooms__modal-button{
-	display: block;
-}*/
 /* ======FOOTER================================================================= */
 
 .footer__copyright{
