@@ -1,0 +1,17 @@
+@mixin montserrat($fw,$fz,$lh) {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: 0.05em;
+}
+
+@mixin yeseva($fw,$fz,$lh) {
+	font-family: 'Yeseva One';
+	font-style: normal;
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: 0.05em;
+}

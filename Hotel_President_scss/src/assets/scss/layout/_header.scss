@@ -1,0 +1,54 @@
+
+.header {
+	background-color: $black;
+	&__body{
+		height: 94px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.container{
+		background-color: transparent
+	}
+}
+
+
+.menu{
+	@include montserrat(400,18px,22px);
+	color: $white;
+	text-decoration: none;
+	text-transform: uppercase;
+	& a{
+		color: $white;
+		position: relative;
+	}
+	& a:hover:after{
+		position: absolute;
+		background-color: $white;
+		content: "";
+		height: 1px;
+		width: 100%;
+		top: 125%;
+		left: 0;
+	}
+	& a:not(:last-child){
+		margin-right: 40px;
+	}	
+}
+
+@media(max-width: 1200px) {
+	.menu{
+		& a{
+			font-size: 12px;
+		}
+		& a:not(:last-child){
+			margin-right: 8px;
+		}	
+	}
+}
+
+@media(max-width: 768px) {
+	.header__body{
+		justify-content: center;
+	}
+}

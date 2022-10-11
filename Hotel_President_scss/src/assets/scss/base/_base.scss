@@ -1,0 +1,41 @@
+body{
+	background-color: #F1F1F1;
+}
+
+.container {
+	background-color: $white;
+	max-width: 1510px;
+	padding: 0 70px; // отступы для внутри контейнера
+	margin: 0 auto;
+}
+
+.btn {
+	padding: 13px 27px;
+	@include montserrat(400,20px,24px);
+	text-transform: uppercase;
+	background-color: $black;
+	border: 1px solid $white;
+	color: $white;
+	&:hover{
+		color: $gold;
+		background-color: $white;
+		border: $gold 1px solid;
+	}
+}
+
+
+@media(max-width: 1200px) {
+	.btn{
+		font-size: 12px;
+		padding: 10px 12px;
+	}
+}
+
+@media(max-width: 768px) {
+	.btn{
+		display: none;
+	}
+	.container{
+		padding: 0 0;
+	}
+}
