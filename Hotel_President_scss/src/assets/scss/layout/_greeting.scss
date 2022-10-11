@@ -1,0 +1,37 @@
+.greeting {
+
+	position: relative;
+
+	&__body {
+		position: relative;
+		text-align: center;
+		padding-top: 114px;
+		color: $white;
+		z-index: 2;
+	}
+
+	&__title {
+		@include yeseva(400,150px,173px);
+		margin-bottom: 22px;
+	}
+
+	&__subtitle{
+		display: flex;
+		justify-content: center;
+	}
+
+	&__subtitle span{
+		display: inline-block;
+		margin: 0 19px;
+		@include yeseva(400,26px,30px);
+	}
+
+	&__background-img {
+		min-height: 433px;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+

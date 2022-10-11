@@ -11,11 +11,13 @@ body {
 
 .container {
   background-color: #FFFFFF;
+  box-sizing: content-box;
   max-width: 1510px;
   padding: 0 70px;
   margin: 0 auto;
 }
 
+/* ======================================================================= */
 .btn {
   padding: 13px 27px;
   font-family: "Montserrat";
@@ -35,10 +37,26 @@ body {
   border: #E0C66E 1px solid;
 }
 
+/* ======================================================================= */
+.ibg {
+  position: relative;
+}
+
+.ibg img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* ======MEDIA================================================================= */
 @media (max-width: 1200px) {
   .btn {
-    font-size: 12px;
     padding: 10px 12px;
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -102,4 +120,44 @@ body {
   .header__body {
     justify-content: center;
   }
+}
+.greeting {
+  position: relative;
+}
+.greeting__body {
+  position: relative;
+  text-align: center;
+  padding-top: 114px;
+  color: #FFFFFF;
+  z-index: 2;
+}
+.greeting__title {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 173px;
+  letter-spacing: 0.05em;
+  margin-bottom: 22px;
+}
+.greeting__subtitle {
+  display: flex;
+  justify-content: center;
+}
+.greeting__subtitle span {
+  display: inline-block;
+  margin: 0 19px;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+}
+.greeting__background-img {
+  min-height: 433px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
