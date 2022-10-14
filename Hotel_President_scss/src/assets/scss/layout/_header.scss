@@ -37,6 +37,17 @@
 	& a:not(:last-child) {
 		margin-right: 40px;
 	}
+
+	& a:nth-child(1):after { //подчеркивание элемента меню страницы, на которой нахдоодишься
+		content: "";
+		height: 1px;
+		width: 100%;
+		background-color: #fff;
+	
+		position: absolute;
+		top: 125%;
+		left: 0;
+	}
 }
 
 /* ======================================================================= */

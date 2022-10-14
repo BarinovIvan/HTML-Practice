@@ -184,6 +184,15 @@ body {
 .menu a:not(:last-child) {
   margin-right: 40px;
 }
+.menu a:nth-child(1):after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 125%;
+  left: 0;
+}
 
 /* ======================================================================= */
 @media (max-width: 1200px) {
