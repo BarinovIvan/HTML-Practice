@@ -400,4 +400,22 @@ main {
   .footer__body {
     height: 60px;
   }
+}
+/* =====FIXES================================================================== */
+.welcome__info {
+  padding-right: 0;
+}
+
+.menu a:nth-child(1):after {
+  height: 0;
+}
+
+.menu a:nth-child(2):after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 125%;
+  left: 0;
 }/*# sourceMappingURL=about.css.map */

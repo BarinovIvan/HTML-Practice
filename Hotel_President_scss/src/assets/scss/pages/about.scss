@@ -8,3 +8,24 @@
 @import "../layout/footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Montserrat:wght@300;400;500&family=Roboto&family=Yeseva+One&display=swap');
+
+/* =====FIXES================================================================== */
+
+.welcome__info {
+	padding-right: 0;
+}
+
+.menu {
+	& a:nth-child(1):after {
+		height: 0;
+	}
+
+	&a:nth-child(2):after {
+		content: "";
+		height: 1px;
+		width: 100%;
+		background-color: #fff;
+		position: absolute;
+		top: 125%;
+		left: 0;
+	}

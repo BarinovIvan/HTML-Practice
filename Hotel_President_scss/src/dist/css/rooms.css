@@ -433,4 +433,35 @@ main {
   .footer__body {
     height: 60px;
   }
+}
+/* ======FIXES================================================================= */
+.welcome__info {
+  padding-right: 0;
+}
+
+.menu a:nth-child(1):after {
+  height: 0;
+}
+.menua:nth-child(3):after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 125%;
+  left: 0;
+}
+
+.rooms {
+  padding-top: 70px;
+}
+.rooms__body {
+  border-top: none;
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .rooms {
+    padding: 20px 10px 220px;
+  }
 }/*# sourceMappingURL=rooms.css.map */
