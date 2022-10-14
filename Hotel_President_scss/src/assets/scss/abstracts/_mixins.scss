@@ -1,23 +1,23 @@
 @mixin fw_fz_lh($fw,$fz,$lh){ // Параметры шрифта
 	font-weight: $fw;
-	font-size: $fz;
 	line-height: $lh;
+	font-size: $fz;
 }
 
 @mixin montserrat($fw,$fz,$lh) { // Параметры шрифта и указание font family
 	font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: $fw;
-	font-size: $fz;
 	line-height: $lh;
+	font-size: $fz;
 }
 
 @mixin yeseva($fw,$fz,$lh) { // Параметры шрифта и указание font family
 	font-family: 'Yeseva One';
 	font-style: normal;
 	font-weight: $fw;
-	font-size: $fz;
 	line-height: $lh;
+	font-size: $fz;
 	
 }
 
