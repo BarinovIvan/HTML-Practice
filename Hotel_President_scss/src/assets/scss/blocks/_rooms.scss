@@ -1,18 +1,79 @@
 .rooms {
 
 	text-align: center;
+	padding: 0 70px 80px;
+
+	&>h2 {
+		margin-top: 10px; // отсутп от блока welcome
+	}
 
 	&__body {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: space-around;
+		border-top: 1px $gold solid;
+		padding: 54px 0 0;
+		flex-wrap: wrap;
+		column-gap: 10%;
+		row-gap: 10%;
 	}
 
 	&__column {
-		
+		background: url('/src/assets/images/rooms/rooms_background.png');
+		background-position: center;
+		background-size: cover;
+		text-align: left;
+		padding: 30px;
 	}
 
 	&__item {
-		background-image: url(../../images/rooms/rooms_background.png) center center ;
+		border: 1px $gold solid;
+		padding: 40px 30px;
+		color: $gold;
+
+		& h3 {
+			@include fw_fz_lh(300, 32px, 39px);
+			margin-bottom: 60px;
+		}
+
+		& p {
+			@include fw_fz_lh(300, 16px, 20px);
+		}
+
+		& p:not(:last-child) {
+			margin-bottom: 20px;
+		}
 	}
 
-	&__background-image {
+	//&__background-image {}
+}
+
+/* ======================================================================= */
+
+@media(max-width: 1200px) {
+	.rooms {
+		
+		padding-bottom: 215px;
+
+		&__body {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+		}
+	}
+}
+
+
+@media(max-width: 768px) {
+	.rooms {
+
+		padding-bottom: 265px;
+
+		&__body {
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: 1fr;
+			row-gap: 2.5%;
+		}
 	}
 }

@@ -54,17 +54,18 @@ a {
 }
 
 body {
-  background-color: #F1F1F1;
   font-family: montserrat, sans-serif;
+  background-color: #F1F1F1;
   letter-spacing: 0.05em;
+  overflow-x: hidden;
 }
 
 .container {
   background-color: #FFFFFF;
   box-sizing: content-box;
   position: relative;
-  z-index: 3;
   margin: 0 auto;
+  z-index: 3;
   width: 87%;
 }
 
@@ -359,7 +360,68 @@ body {
 }
 .rooms {
   text-align: center;
+  padding: 0 70px 80px;
+}
+.rooms > h2 {
+  margin-top: 10px;
+}
+.rooms__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-around;
+  border-top: 1px #E0C66E solid;
+  padding: 54px 0 0;
+  flex-wrap: wrap;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  row-gap: 10%;
+}
+.rooms__column {
+  background: url("/src/assets/images/rooms/rooms_background.png");
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  padding: 30px;
 }
 .rooms__item {
-  background-image: url(../../images/rooms/rooms_background.png) center center;
+  border: 1px #E0C66E solid;
+  padding: 40px 30px;
+  color: #E0C66E;
+}
+.rooms__item h3 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 60px;
+}
+.rooms__item p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+}
+.rooms__item p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* ======================================================================= */
+@media (max-width: 1200px) {
+  .rooms {
+    padding-bottom: 215px;
+  }
+  .rooms__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .rooms {
+    padding-bottom: 265px;
+  }
+  .rooms__body {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    row-gap: 2.5%;
+  }
 }/*# sourceMappingURL=style.css.map */

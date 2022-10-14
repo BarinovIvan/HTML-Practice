@@ -1,15 +1,16 @@
 body{
-	background-color: #F1F1F1;
 	font-family: montserrat, sans-serif;
+	background-color: #F1F1F1;
 	letter-spacing: 0.05em;
+	overflow-x: hidden;
 }
 
 .container {
 	background-color: $white;
 	box-sizing: content-box;
 	position: relative; // отображение поверх greeting
-	z-index: 3;
 	margin: 0 auto;
+	z-index: 3;
 	width: 87%;
 }
 
