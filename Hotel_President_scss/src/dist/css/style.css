@@ -151,10 +151,10 @@ body {
   background-color: #000000;
 }
 .header__body {
-  height: 94px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  height: 94px;
 }
 .header .container {
   background-color: transparent;
@@ -164,17 +164,17 @@ body {
   font-weight: 400;
   line-height: 22px;
   font-size: 18px;
-  color: #FFFFFF;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .menu a {
-  color: #FFFFFF;
   position: relative;
+  color: #FFFFFF;
 }
 .menu a:hover:after {
-  position: absolute;
   background-color: #FFFFFF;
+  position: absolute;
   content: "";
   height: 1px;
   width: 100%;
@@ -219,21 +219,21 @@ body {
   margin-bottom: 22px;
 }
 .greeting__subtitle {
-  display: flex;
   justify-content: center;
+  display: flex;
 }
 .greeting__subtitle h2 {
-  display: inline-block;
-  margin: 0 19px;
   font-family: "Yeseva One";
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
   font-size: 26px;
+  display: inline-block;
+  margin: 0 19px;
 }
 .greeting__background-img {
-  min-height: 433px;
   position: absolute;
+  min-height: 433px;
   width: 100%;
   top: 0;
   left: 0;
@@ -249,8 +249,8 @@ body {
     font-size: 95px;
   }
   .greeting__background-img {
-    min-height: 300px;
     position: absolute;
+    min-height: 300px;
     width: 100%;
     top: 0;
     left: 0;
@@ -259,8 +259,8 @@ body {
 @media (max-width: 768px) {
   .greeting__title {
     margin-bottom: 15px;
-    font-size: 50px;
     line-height: 80px;
+    font-size: 50px;
   }
   .greeting__stars:nth-child(1) {
     display: none;
@@ -273,8 +273,8 @@ body {
     font-size: 25px;
   }
   .greeting__background-img {
-    min-height: 225px;
     position: absolute;
+    min-height: 225px;
     width: 100%;
     top: 0;
     left: 0;
@@ -519,5 +519,31 @@ body {
   }
   .contacts iframe {
     width: 300px;
+  }
+}
+.footer {
+  background-color: #000000;
+}
+.footer__body {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 94px;
+}
+.footer__body p {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.footer .container {
+  background-color: transparent;
+}
+
+/* ======================================================================= */
+@media (max-width: 768px) {
+  .footer__body {
+    height: 60px;
   }
 }/*# sourceMappingURL=style.css.map */

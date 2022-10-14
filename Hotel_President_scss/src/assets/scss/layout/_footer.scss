@@ -1,0 +1,29 @@
+.footer {
+	background-color: $black;
+
+	&__body {
+		padding: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 94px;
+
+		p {
+			@include fw_fz_lh(400,16px,22px);
+			color: $white;
+		}
+	}
+
+	.container {
+		background-color: transparent
+	}
+}
+
+/* ======================================================================= */
+
+
+@media(max-width: 768px) {
+	.footer__body {
+		height: 60px;
+	}
+}

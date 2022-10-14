@@ -16,19 +16,19 @@
 	}
 
 	&__subtitle {
-		display: flex;
 		justify-content: center;
+		display: flex;
 	}
 
 	&__subtitle h2 {
+		@include yeseva(400, 26px, 30px);
 		display: inline-block;
 		margin: 0 19px;
-		@include yeseva(400, 26px, 30px);
 	}
 
 	&__background-img {
-		min-height: 433px;
 		position: absolute;
+		min-height: 433px;
 		width: 100%;
 		top: 0;
 		left: 0;
@@ -49,8 +49,8 @@
 		}
 
 		&__background-img {
-			min-height: 300px;
 			position: absolute;
+			min-height: 300px;
 			width: 100%;
 			top: 0;
 			left: 0;
@@ -63,8 +63,8 @@
 
 		&__title {
 			margin-bottom: 15px;
-			font-size: 50px;
 			line-height: 80px;
+			font-size: 50px;
 		}
 
 		&__stars:nth-child(1){ //Убираем один ряд звёзд
@@ -81,8 +81,8 @@
 		}
 
 		&__background-img {
-			min-height: 225px;
 			position: absolute;
+			min-height: 225px;
 			width: 100%;
 			top: 0;
 			left: 0;

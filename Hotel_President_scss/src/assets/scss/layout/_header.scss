@@ -2,10 +2,10 @@
 	background-color: $black;
 
 	&__body {
-		height: 94px;
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
+		align-items: center;
+		height: 94px;
 	}
 
 	.container {
@@ -15,18 +15,18 @@
 
 .menu {
 	@include fw_fz_lh(400, 18px, 22px);
-	color: $white;
-	text-decoration: none;
 	text-transform: uppercase;
+	text-decoration: none;
+	color: $white;
 
 	& a{
-		color: $white;
 		position: relative;
+		color: $white;
 	}
 
 	& a:hover:after {
-		position: absolute;
 		background-color: $white;
+		position: absolute;
 		content: "";
 		height: 1px;
 		width: 100%;
