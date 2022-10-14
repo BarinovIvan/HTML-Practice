@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/src/dist/css/style.css">
-	<title>President Hotel</title>
-</head>
-
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="header__body">
-				<button class="btn">Забронировать</button>
-				<div class="menu">
-					<a href="../index.html">Главная</a>
-					<a href="./about.html">О отеле</a>
-					<a href="./rooms.html">Номера</a>
-					<a href="./contacts.html">Контакты</a>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/src/dist/css/rooms.css">
+		<style>
+			.welcome__info{
+				padding-right: 0;
+			}
+			.menu a:nth-child(1):after {
+				height: 0;
+				
+			}
+			.menu a:nth-child(3):after {
+				content: "";
+				height: 1px;
+				width: 100%;
+				background-color: #fff;
+			
+				position: absolute;
+				top: 125%;
+				left: 0;
+			}
+			.rooms{
+				padding-top: 70px;
+			}
+			.rooms__body{
+				border-top: none;
+				padding-top: 0;
+			}
+			@media(max-width: 768px) {
+				.rooms{
+					padding: 20px 10px 220px;
+				}
+			}
+			
+		</style>
+		<title>President Hotel</title>
+	</head>
+	
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<button class="btn">Забронировать</button>
+					<div class="menu">
+						<a href="./index.html">Главная</a>
+						<a href="./about.html">О отеле</a>
+						<a href="./rooms.html">Номера</a>
+						<a href="./contacts.html">Контакты</a>
+					</div>
+					<a href="tel:+7(928) 567-14-43" class="btn">+7(928) 567-14-43</a>
 				</div>
-				<a href="tel:+7(928) 567-14-43" class="btn">+7(928) 567-14-43</a>
 			</div>
-		</div>
-	</header>
+		</header>
 	<section class="greeting">
 		<div>
 			<div class="greeting__body">
@@ -76,28 +108,6 @@
 	</section>
 	<main>
 		<div class="container">
-			<section class="welcome">
-				<h2 class="title">Добро пожаловать</h2>
-				<div class="welcome__content">
-					<div class="welcome__text-block">
-						<div class="welcome__subtitle">Отель «Президент» в Махачкале
-						</div>
-						<div class="welcome__info">Отель «Президент» предоставляет высокий уровень сервиса и заботится о
-							комфортном
-							и безопасном отдыхе своих гостей. <br>
-							Вас встретит квалифицированный, внимательный, приветливый персонал. Своим гостям мы можем
-							предложить
-							комфортабельные и уютные номера.</div>
-						<button class="btn">ПОДРОБНЕЕ</button>
-					</div>
-					<div class="welcome__image-reception">
-						<img src="./assets/images/welcome/greeting_reception.png" alt="reception picture">
-					</div>
-				</div>
-				<div class="background-image ibg">
-					<img src="./assets/images/welcome/contbackhome 1.png" alt="background geraldic">
-				</div>
-			</section>
 			<section class="rooms">
 				<h2 class="title">НОМЕРА</h2>
 				<div class="rooms__body">
@@ -160,31 +170,6 @@
 								2500 рублей</p>
 						</div>
 						<div class="rooms__button "><a href="/rooms.html">ЗАБРОНИРОВАТЬ</a></div>
-					</div>
-				</div>
-			</section>
-			<section class="contacts">
-				<div class="contacts__body">
-					<h2 class="title">КОНТАКТЫ</h2>
-					<div class="contacts__content">
-						<div class="contacts__text-block">
-							<div class="contacts__phone">
-								<img src="./assets/images/contacts/phone_icon.png" alt="phone icon">
-								<p>ТЕЛ.: (8722) 69-14-43, 69-14-44, +7928-567-14-43 <br>
-									ФАКС: (8722) 69-14-54 <br>
-									РЕСТОРАН: +7(928) 802-02-23; +7(909) 481-10-55</p>
-							</div>
-							<div class="contacts__mail">
-								<img src="./assets/images/contacts/mail_icon.png" alt="phone icon">
-								<p>DAG-HOTEL@MAIL.RU <br>
-									DAGPRESIDENTHOTEL@RAMBLER.RU</p>
-							</div>
-							<div class="contacts__map">
-								<img src="./assets/images/contacts/map_icon.png" alt="phone icon">
-								<p>Г. МАХАЧКАЛА, УЛ. АВТОМОБИЛИСТОВ, 7</p>
-							</div>
-						</div>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.675031824619!2d47.461114715355805!3d42.98511867914983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404ea03257491f69%3A0xe7d32af01166348e!2z0YPQuy4g0JDQstGC0L7QvNC-0LHQuNC70LjRgdGC0L7QsiwgNywg0JzQsNGF0LDRh9C60LDQu9CwLCDQoNC10YHQvy4g0JTQsNCz0LXRgdGC0LDQvSwgMzY3MDI3!5e0!3m2!1sru!2sru!4v1665759816437!5m2!1sru!2sru" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
 			</section>

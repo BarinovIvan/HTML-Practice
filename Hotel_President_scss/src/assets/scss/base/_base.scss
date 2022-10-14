@@ -5,6 +5,12 @@ body{
 	overflow-x: hidden;
 }
 
+main{
+	padding-bottom: 10px;
+	margin-bottom: 45px;
+	margin-top: -58px;
+}
+
 .container {
 	background-color: $white;
 	box-sizing: content-box;
@@ -54,6 +60,7 @@ body{
 	width: 110%;
 	top: 60px;
 	right: 0;
+	z-index: 0;
 }
 
 /* ======================================================================= */
@@ -79,6 +86,12 @@ body{
 }
 
 @media(max-width: 768px) {
+	
+	main{ // убираю оступ до футера
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
 	.btn{
 		display: none;
 	}

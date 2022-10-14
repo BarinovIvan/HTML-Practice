@@ -1,6 +1,6 @@
 .rooms {
 
-	padding: 0 130px 80px;
+	padding: 0 130px 120px;
 	text-align: center;
 
 	&>h2 {
@@ -104,6 +104,7 @@
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(3, 1fr);
+			row-gap: 5%;
 		}
 	}
 }

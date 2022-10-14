@@ -1,6 +1,6 @@
 .contacts {
 
-	padding: 120px 130px 0;
+	padding: 58px 130px 0;
 	text-align: center;
 
 	&__content {
@@ -9,6 +9,8 @@
 	}
 
 	&__body {
+		padding-bottom: 40px;
+		
 		h2 {
 			margin-bottom: 100px;
 		}
