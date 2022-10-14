@@ -1,27 +1,30 @@
-
 .header {
 	background-color: $black;
-	&__body{
+
+	&__body {
 		height: 94px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
-	.container{
+
+	.container {
 		background-color: transparent
 	}
 }
 
-.menu{
-	@include montserrat(400,18px,22px);
+.menu {
+	@include fw_fz_lh(400, 18px, 22px);
 	color: $white;
 	text-decoration: none;
 	text-transform: uppercase;
+
 	& a{
 		color: $white;
 		position: relative;
 	}
-	& a:hover:after{
+
+	& a:hover:after {
 		position: absolute;
 		background-color: $white;
 		content: "";
@@ -30,24 +33,29 @@
 		top: 125%;
 		left: 0;
 	}
-	& a:not(:last-child){
+
+	& a:not(:last-child) {
 		margin-right: 40px;
-	}	
+	}
 }
 
+/* ======================================================================= */
+
 @media(max-width: 1200px) {
-	.menu{
-		& a{
+	.menu {
+		& a {
 			font-size: 12px;
 		}
-		& a:not(:last-child){
+
+		& a:not(:last-child) {
 			margin-right: 8px;
-		}	
+		}
 	}
 }
 
 @media(max-width: 768px) {
-	.header__body{
+	.header__body {
 		justify-content: center;
+		height: 60px;
 	}
 }

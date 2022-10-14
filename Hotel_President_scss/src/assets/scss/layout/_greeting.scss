@@ -4,26 +4,26 @@
 
 	&__body {
 		position: relative;
+		padding: 114px 0 94px;
 		text-align: center;
-		padding-top: 114px;
 		color: $white;
 		z-index: 2;
 	}
 
 	&__title {
-		@include yeseva(400,150px,173px);
+		@include yeseva(400, 150px, 173px);
 		margin-bottom: 22px;
 	}
 
-	&__subtitle{
+	&__subtitle {
 		display: flex;
 		justify-content: center;
 	}
 
-	&__subtitle span{
+	&__subtitle h2 {
 		display: inline-block;
 		margin: 0 19px;
-		@include yeseva(400,26px,30px);
+		@include yeseva(400, 26px, 30px);
 	}
 
 	&__background-img {
@@ -35,3 +35,57 @@
 	}
 }
 
+/* ======================================================================= */
+
+@media(max-width: 1200px) {
+	.greeting {
+		&__body {
+			padding: 0 0 80px;
+		}
+
+		&__title {
+			margin-bottom: 15px;
+			font-size: 95px;
+		}
+
+		&__background-img {
+			min-height: 300px;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.greeting {
+
+		&__title {
+			margin-bottom: 15px;
+			font-size: 50px;
+			line-height: 80px;
+		}
+
+		&__stars:nth-child(1){ //Убираем один ряд звёзд
+			display: none;
+		}
+
+		&__subtitle {
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		&__subtitle h2{
+			font-size: 25px;
+		}
+
+		&__background-img {
+			min-height: 225px;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+}

@@ -1,20 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Montserrat:wght@300;400;500&family=Roboto&family=Yeseva+One&display=swap");
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
   text-decoration: none;
 }
 
 body {
   background-color: #F1F1F1;
+  font-family: montserrat, sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .container {
   background-color: #FFFFFF;
   box-sizing: content-box;
-  max-width: 1510px;
-  padding: 0 70px;
+  position: relative;
+  z-index: 3;
   margin: 0 auto;
+  width: 87%;
 }
 
 /* ======================================================================= */
@@ -25,7 +76,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
   background-color: #000000;
   border: 1px solid #FFFFFF;
@@ -52,8 +102,31 @@ body {
   top: 0;
 }
 
+/* ======================================================================= */
+.background-image {
+  display: none;
+  position: absolute;
+  min-height: 489px;
+  width: 110%;
+  top: 60px;
+  right: 0;
+}
+
+/* ======================================================================= */
+.title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #E0C66E;
+}
+
 /* ======MEDIA================================================================= */
 @media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
   .btn {
     padding: 10px 12px;
     font-size: 12px;
@@ -65,6 +138,12 @@ body {
   }
   .container {
     padding: 0 0;
+    width: 100%;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 }
 .header {
@@ -81,12 +160,9 @@ body {
 }
 
 .menu {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0.05em;
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
@@ -108,6 +184,7 @@ body {
   margin-right: 40px;
 }
 
+/* ======================================================================= */
 @media (max-width: 1200px) {
   .menu a {
     font-size: 12px;
@@ -119,6 +196,7 @@ body {
 @media (max-width: 768px) {
   .header__body {
     justify-content: center;
+    height: 60px;
   }
 }
 .greeting {
@@ -126,8 +204,8 @@ body {
 }
 .greeting__body {
   position: relative;
+  padding: 114px 0 94px;
   text-align: center;
-  padding-top: 114px;
   color: #FFFFFF;
   z-index: 2;
 }
@@ -137,14 +215,13 @@ body {
   font-weight: 400;
   font-size: 150px;
   line-height: 173px;
-  letter-spacing: 0.05em;
   margin-bottom: 22px;
 }
 .greeting__subtitle {
   display: flex;
   justify-content: center;
 }
-.greeting__subtitle span {
+.greeting__subtitle h2 {
   display: inline-block;
   margin: 0 19px;
   font-family: "Yeseva One";
@@ -152,7 +229,6 @@ body {
   font-weight: 400;
   font-size: 26px;
   line-height: 30px;
-  letter-spacing: 0.05em;
 }
 .greeting__background-img {
   min-height: 433px;
@@ -160,4 +236,130 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+/* ======================================================================= */
+@media (max-width: 1200px) {
+  .greeting__body {
+    padding: 0 0 80px;
+  }
+  .greeting__title {
+    margin-bottom: 15px;
+    font-size: 95px;
+  }
+  .greeting__background-img {
+    min-height: 300px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .greeting__title {
+    margin-bottom: 15px;
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .greeting__stars:nth-child(1) {
+    display: none;
+  }
+  .greeting__subtitle {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .greeting__subtitle h2 {
+    font-size: 25px;
+  }
+  .greeting__background-img {
+    min-height: 225px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.welcome {
+  text-align: center;
+  margin-top: -58px;
+  padding: 81px 70px;
+  position: relative;
+  z-index: 3;
+}
+.welcome__content {
+  position: relative;
+  border: 1px #E0C66E solid;
+  text-align: left;
+  padding: 40px;
+  z-index: 3;
+}
+.welcome__subtitle {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 40px;
+}
+.welcome__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  padding-right: 450px;
+  margin-bottom: 26px;
+}
+.welcome .btn {
+  padding: 14px 57px;
+}
+.welcome__image-reception {
+  position: absolute;
+  top: -100px;
+  right: -180px;
+}
+
+/* ======================================================================= */
+@media (max-width: 1200px) {
+  .welcome__image-reception {
+    top: 40px;
+    right: -250px;
+  }
+  .welcome__image-reception img {
+    width: 50%;
+  }
+  .welcome__info {
+    padding-right: 260px;
+  }
+  .welcome__subtitle {
+    padding-right: 230px;
+  }
+}
+@media (max-width: 768px) {
+  .welcome {
+    padding: 30px 10px;
+  }
+  .welcome__content {
+    padding: 20px;
+  }
+  .welcome__text-block {
+    text-align: center;
+  }
+  .welcome__image-reception {
+    display: none;
+  }
+  .welcome__info {
+    padding-right: 0;
+  }
+  .welcome__subtitle {
+    padding-right: 0;
+  }
+  .welcome .btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.rooms {
+  text-align: center;
+}
+.rooms__item {
+  background-image: url(../../images/rooms/rooms_background.png) center center;
 }/*# sourceMappingURL=style.css.map */
