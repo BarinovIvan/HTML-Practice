@@ -15,21 +15,22 @@
 	padding-right: 0;
 }
 
-.menu{
+.menu {
 	& a:nth-child(1):after {
 		height: 0;
 	}
 
-	&a:nth-child(3):after {
+	& a:nth-child(3):after {
+		background-color: #fff;
+		position: absolute;
 		content: "";
 		height: 1px;
 		width: 100%;
-		background-color: #fff;
-		position: absolute;
 		top: 125%;
 		left: 0;
 	}
 }
+
 .rooms{
 	padding-top: 70px;
 

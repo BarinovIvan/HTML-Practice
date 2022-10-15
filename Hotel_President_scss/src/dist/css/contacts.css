@@ -434,11 +434,11 @@ main {
   height: 0;
 }
 .menu a:nth-child(4):after {
+  background-color: #fff;
+  position: absolute;
   content: "";
   height: 1px;
   width: 100%;
-  background-color: #fff;
-  position: absolute;
   top: 125%;
   left: 0;
 }/*# sourceMappingURL=contacts.css.map */
